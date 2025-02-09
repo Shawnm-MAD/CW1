@@ -129,8 +129,24 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
               "Increment",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            ),
-            const SizedBox(height: 40), 
+          ),
+          const SizedBox(height: 40), 
+
+            // Commit 14: Image with animation
+            SizedBox(
+              height: 200,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: FadeTransition(
+                  opacity: _fadeAnimation,
+                  child: Image.network(
+                    isImageOne ? imageOne : imageTwo,
+                    fit: BoxFit.cover,
+                   ),
+                 ),
+               ),
+             ),
+             const SizedBox(height: 20),
           ],
         )
       )
