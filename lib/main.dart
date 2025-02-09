@@ -60,6 +60,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       curve: Curves.easeInOut,
     );
   }
+
+  // Commit 6: Increment Counter function
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
   
     )
   }
