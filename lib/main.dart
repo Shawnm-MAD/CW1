@@ -37,5 +37,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   int_counter = 0; // Counter variable initialized
   bool isImageOne = true; // Booleaan for image toggle
-  
+
+  // Commit 4: Define Image URLs
+  String imageOne = "https://raw.githubusercontent.com/Shawnm-MAD/CW1/main/sunflower.jpg";
+  String imageTwo = "https://raw.githubusercontent.com/Shawnm-MAD/CW1/main/panda.jpg" ;
+
+  late AnimationController _animationController;
+  late Animation<double> _fadeAnimation;
+
+  @override
+  void initState(){
+    super.initState();
+  }
 }
