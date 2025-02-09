@@ -67,7 +67,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       _counter++;
     });
   }
-  
+
+  // Commit 7: Toggle Image function with animation
+  void _toggleImage() {
+    setState(() {
+      isImageOne = !isImageOne;
+    });
+    _animationController.forward(from: 0.0);
+  }
     )
   }
 }
