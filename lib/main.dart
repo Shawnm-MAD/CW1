@@ -166,8 +166,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           ],
         ),
       ),
-    )
-  }
-    )
+
+      // Commit 16: FloatingActionButton for increment
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+        ),
+    );
   }
 }
