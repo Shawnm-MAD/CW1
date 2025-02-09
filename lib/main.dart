@@ -84,6 +84,18 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     _animationController.dispose();
     super.dispose();
   }
+
+// Commit 9: Define AppBar with dynamic color theme
+  @override
+  Widget build (BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+        centerTitle: true,
+      ),
+    )
+  }
     )
   }
 }
