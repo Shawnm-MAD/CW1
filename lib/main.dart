@@ -48,5 +48,19 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   @override
   void initState(){
     super.initState();
+
+    // Commit 5: Initialize AnimationController and FadeTransition Animation
+    _animationController = AnimationController(
+      duration: const Duration(seconds: 1),
+      vsync: this,
+    );
+
+    _fadeAnimation = CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeInOut,
+    );
+  }
+  
+    )
   }
 }
