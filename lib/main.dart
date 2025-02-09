@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -74,6 +76,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       isImageOne = !isImageOne;
     });
     _animationController.forward(from: 0.0);
+  }
+
+  // Commit 8: Disposing animation controller
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
     )
   }
