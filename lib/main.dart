@@ -108,6 +108,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
               style:TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             
+          // Commit 12: Display counter number
+          Text(
+            '$_counter',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+          const SizedBox(height: 20),
+          
           ],
         )
       )
