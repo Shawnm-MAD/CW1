@@ -37,7 +37,7 @@ class MyHomePage extends StatefulWidget {
 
 // Commit 3: Define _MyHomePageState with counter and image toggle logic
 class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
-  int_counter = 0; // Counter variable initialized
+  int _counter = 0; // Counter variable initialized
   bool isImageOne = true; // Booleaan for image toggle
 
   // Commit 4: Define Image URLs
@@ -147,9 +147,25 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                ),
              ),
              const SizedBox(height: 20),
+
+             // Commit 15: Toggle Image Button
+             ElevatedButton(
+              onPressed: _toggleImage,
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                backgroundColor: Colors.greenAccent[700],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: const Text(
+                "Toggle Image",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
-        )
-      )
+        ),
+      ),
     )
   }
     )
