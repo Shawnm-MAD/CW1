@@ -32,3 +32,10 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
+
+// Commit 3: Define _MyHomePageState with counter and image toggle logic
+class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
+  int_counter = 0; // Counter variable initialized
+  bool isImageOne = true; // Booleaan for image toggle
+  
+}
