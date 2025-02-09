@@ -114,7 +114,23 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             style: Theme.of(context).textTheme.headlineMedium,
           ),
           const SizedBox(height: 20),
-          
+
+          // Commit 13: Increment button
+          ElevatedButton(
+            onPressed: _incrementCounter,
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              backgroundColor: Colors.blueAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text(
+              "Increment",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            ),
+            const SizedBox(height: 40), 
           ],
         )
       )
