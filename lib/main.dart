@@ -94,6 +94,18 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         title: Text(widget.title),
         centerTitle: true,
       ),
+
+// Commit 10: Add padding
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            
+          ],
+        )
+      )
     )
   }
     )
