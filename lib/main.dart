@@ -102,6 +102,11 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            // Commit 11: Display counter text
+            const Text(
+              'You have pushed the button this many times:',
+              style:TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
             
           ],
         )
